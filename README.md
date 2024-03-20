@@ -101,9 +101,9 @@ writer.save()
 
 ## Carregar os dados do Excel para um DataFrame
 dados2_excel = pd.read_excel('regressao_linear.xlsx', sheet_name = 'CTL', index_col=0) 
-# Supondo que a primeira coluna seja o índice dos genes
 print (dados2_excel)
-## Converter variáveis categóricas em variáveis dummy, se necessário
+
+# Converter variáveis categóricas em variáveis dummy
 dados2_excel = pd.get_dummies(dados2_excel)
 
 ## Loop para calcular a regressão linear e obter mais parâmetros
